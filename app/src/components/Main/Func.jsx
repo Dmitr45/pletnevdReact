@@ -1,10 +1,11 @@
 import {AppContextProvider} from "../../context/ContextProvider";
 import styles from "./styles.module.css";
-import Menu from "../Menu/Menu"
+import Sidebar from "../Sidebar/Func"
+import Header from "../Header/Func"
 
 
 
-export default function Main(){
+export default function Func(){ //Main
 
 return (
     <div>
@@ -12,7 +13,8 @@ return (
         <div className={styles.container}>
             <div className={styles.sidebar}>
                 <div className={styles.ava}></div>
-                <Menu/>
+                <Header/>
+                {/* <Sidebar/> */}
             </div>
             <div className={styles.content}>
 

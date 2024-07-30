@@ -3,7 +3,7 @@ import {useAppContext} from  "../../context/ContextProvider";
 
 
 
-export default function Menu(){
+export default function Func(){ // Sidebar
     const  menuArr =  useAppContext(); // Массив элементов меню
     console.log(menuArr);
 

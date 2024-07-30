@@ -1,11 +1,8 @@
-import './App.css';
-import ReactHeader from "./components/ReactHeader/ReactHeader"
-import Main from './components/Main/Main';
+import Main from './components/Main/Func';
 
 function App() {
   return (
     <div>
-      {/* <ReactHeader/> */}
       <Main/>
     </div>
   );
