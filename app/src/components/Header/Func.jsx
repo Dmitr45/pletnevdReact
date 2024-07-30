@@ -2,6 +2,7 @@ import {useState} from 'react';
 import styles from './styles.module.css';
 import "../../styles.css";
 import logo from "./img/logo.jpg";
+import {useAppContext} from  "../../context/ContextProvider";
 
 
 
@@ -10,7 +11,11 @@ export default function Func(){ //Header
 
 
 let [logoVisibility,setLogoVisibility ] = useState(true);
+const  {menuArr} =  useAppContext(); // Массив элементов меню
 
+let menuItems = menuArr.map((Obj)=> {return( <div key={Obj.id} className={styles.header__menu__item}>{Obj.name}</div>)});
+
+console.log();
 return(
 <div className={styles.header}>
     <div className={styles.header__inner+" "+  "container"}>
@@ -26,8 +31,20 @@ return(
                     Пусть всё станет возможным!
                 </div>
             </div>
-
         </div>
+
+        <div className={styles.header__menu}>
+            {menuItems}
+        </div>
+
+        <div className={styles.header__phone}>
+            <a href="tel:+79529025968">+7 (952)-902-5968</a>
+        </div>
+
+        <div className={styles.header__btn + " " + "btn"}>
+            Оставить заявку
+        </div>
+
 
     </div>
 </div>

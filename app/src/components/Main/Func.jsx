@@ -14,7 +14,7 @@ return (
             <div className={styles.sidebar}>
                 <div className={styles.ava}></div>
                 <Header/>
-                {/* <Sidebar/> */}
+                <Sidebar/>
             </div>
             <div className={styles.content}>
 

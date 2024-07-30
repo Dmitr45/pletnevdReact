@@ -22,6 +22,9 @@
     -webkit-transition: 300ms;
     -o-transition: 300ms;
     transition: 300ms;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
   &__logo{
     display: flex;
@@ -38,13 +41,58 @@
       }
     }
     .Pletnev{
+      padding-top: 10px;
       font-size: 30px;
-      font-weight: 500;
+      font-weight: 600;
     }
     .slogan{
       font-size: 19px;
     }
   }
+  &__menu{
+    flex: 1 1 300px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    &__item{
+      height: 100%;
+      flex: 1 1 150px;
+      line-height: 30px;
+      text-align: center;
+      cursor:pointer;
+    }
+  }
+  &__phone{
+    max-width: 200px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #333333;
+    a{text-decoration: none; color:inherit; }
+  }
+  &__btn{
+    border: 2px solid #fa2424;
+    color: #fa2424;
+    padding: 0;
+    background: #ffffff;
+  }
+  @media (max-width: 1199px) {
+    .header__menu {
+      height: 100%;
+      width: 100%;
+      background: #ffffff;
+    }
+  }
+  @media (min-width: 1200px) {
+    .header__menu {
+      margin-right: 20px;
+    }
+  }
+
+
+
+
+
 }
 @media (min-width: 1200px) {
   .header {
