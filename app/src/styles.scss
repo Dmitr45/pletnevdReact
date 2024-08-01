@@ -8,9 +8,15 @@
     // url("fonts/Samplino.svg#Samplino") format("svg");
     }
 
+    
+@font-face {
+    font-family: "Nullchock";
+    src: url("fonts/nulshockrg-bold.ttf") format("truetype");
+  }
+
 *{
     font-family: "ProximaRegular";
-    font-size: 18px;
+    font-size: 24px;
     line-height: 26px;
     font-weight: 400;
 }
@@ -29,7 +35,7 @@
     text-align: center;
     border: 2px solid #fa2424;
     height: 40px;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 20px;
     color: #fa2424;
     font-weight: 600;
@@ -46,6 +52,10 @@
 
 
 .container{
+    width: 1500px;
     padding-left: 30px;
     margin-right: 30px;
+}
+.wrapper{
+    max-width: 2000px;
 }

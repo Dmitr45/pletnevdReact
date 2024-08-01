@@ -3,7 +3,75 @@
   width: 300px;
 }
 .sidebar__inner {
+  display: block;
+  height: inherit;
+  position: relative;
+  z-index: 100;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding-top: 40px;
+  height: calc(100vh - 45px);
+  padding-left: 35px;
   border-right: 1px solid #e0e0e0;
+}
+.sidebar__logo {
+  margin-bottom: 30px;
+}
+.sidebar__logo .logo {
+  font-size: 32px;
+  max-width: 162px;
+  font-family: "Nullchock";
+  color: #fa2424;
+}
+.sidebar__photo {
+  margin-bottom: 87px;
+}
+.sidebar__photo .photo {
+  width: 230px;
+  height: 230px;
+  background-image: url("./img/PletnevDmitrii.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  border-radius: 50%;
+  border-bottom: #fa2424 3px solid;
+  border-right: #fa2424 3px solid;
+}
+.sidebar__menu .menu__list {
+  list-style: none;
+}
+.sidebar__menu .menu__list .menu__item {
+  margin-bottom: 17px;
+  color: #333333;
+}
+.sidebar__menu .menu__list .menu__item div {
+  -webkit-transition: 200ms;
+  -o-transition: 200ms;
+  transition: 200ms;
+  font-weight: bold;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: inherit;
+  position: relative;
+  cursor: pointer;
+}
+.sidebar__menu .menu__list .menu__item:hover {
+  padding-left: 18px;
+}
+.sidebar__menu .menu__list .menu__item:hover ::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 12px;
+  background: url("./img/arrow-menu-right.svg") no-repeat;
+  top: 50%;
+  left: -20px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 @media (min-width: 1200px) {

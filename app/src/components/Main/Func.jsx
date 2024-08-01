@@ -1,5 +1,6 @@
 import {AppContextProvider} from "../../context/ContextProvider";
 import styles from "./styles.module.css";
+import "../../styles.css"
 import Sidebar from "../Sidebar/Func"
 import Header from "../Header/Func"
 
@@ -10,7 +11,7 @@ export default function Func(){ //Main
 return (
     <div>
         <AppContextProvider>
-        <div className={styles.container}>
+        <div className={"wrapper"}>
             <div className={styles.sidebar}>
                 <div className={styles.ava}></div>
                 <Header/>

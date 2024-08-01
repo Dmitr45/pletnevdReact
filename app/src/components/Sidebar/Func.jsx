@@ -11,8 +11,25 @@ const itemMenu =   menuArr.map((elem)=>{return <li index={elem.id}>{elem.name}</
 return (
     <div className={styles.sidebar}>
         <div className={styles.sidebar__inner}>
-
-
+            <div className={styles.sidebar__logo}>
+                <div className={styles.logo}>
+                    Pletnev<br/>Dmitrii
+                </div>
+            </div>
+            <div className={styles.sidebar__photo}>
+                <div className={styles.photo}>
+                </div>
+            </div>
+            <div className={styles.sidebar__menu}>
+                <div className={styles.menu}>
+                    <ul className={styles.menu__list}>
+                        <li className={styles.menu__item}><div>Верстка HTML/SCSS</div></li>
+                        <li className={styles.menu__item}><div>Верстка ReactJs</div></li>
+                        <li className={styles.menu__item}><div>Приложение ReactJs</div></li>
+                        <li className={styles.menu__item}><div>Сайт ReactJs/NextJs </div></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 )};

@@ -2,8 +2,80 @@
     height: 100vh;
     width: 300px;
     &__inner{
-
+        display: block;
+        height: inherit;
+        position: relative;
+        z-index: 100;
+        background-color: #ffffff;
+        -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding-top: 40px;
+        height: calc(100vh - 45px);
+        padding-left: 35px;
         border-right: 1px solid #e0e0e0;
+    }
+    &__logo{
+        margin-bottom: 30px;
+        .logo{
+
+            font-size: 32px;
+            max-width: 162px;
+            font-family: "Nullchock";
+            color: #fa2424;
+        }
+    }
+    &__photo{
+        margin-bottom: 87px;
+        .photo{
+            width: 230px;
+            height: 230px;
+            background-image: url("./img/PletnevDmitrii.jpg") ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            border-radius: 50%;
+            border-bottom: #fa2424 3px solid;
+            border-right: #fa2424 3px solid;
+        }
+    }
+    &__menu{
+        .menu{
+            &__list{
+                list-style: none;
+                .menu__item{
+                    margin-bottom: 17px;
+                    color: #333333;
+                    div{
+                        -webkit-transition: 200ms;
+                        -o-transition: 200ms;
+                        transition: 200ms;
+                        font-weight: bold;
+                        font-family: "IBM Plex Mono", monospace;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: inherit;
+                        position: relative;
+                        cursor: pointer;
+                    }
+                &:hover{
+                    padding-left: 18px;
+                }
+                &:hover ::before{
+                    content: "";
+                    position: absolute;
+                    width: 7px;
+                    height: 12px;
+                    background: url("./img/arrow-menu-right.svg") no-repeat;
+                    top: 50%;
+                    left: -20px;
+                    -webkit-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                            transform: translateY(-50%);
+                }                
+                }
+            }
+        }
     }
 
 }

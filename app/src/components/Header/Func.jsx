@@ -10,7 +10,7 @@ export default function Func(){ //Header
 
 
 
-let [logoVisibility,setLogoVisibility ] = useState(true);
+let [logoVisibility,setLogoVisibility ] = useState(false);
 const  {menuArr} =  useAppContext(); // Массив элементов меню
 
 let menuItems = menuArr.map((Obj)=> {return( <div key={Obj.id} className={styles.header__menu__item}>{Obj.name}</div>)});
