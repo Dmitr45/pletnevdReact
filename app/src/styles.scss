@@ -19,6 +19,10 @@
     font-size: 24px;
     line-height: 26px;
     font-weight: 400;
+    a{
+       text-decoration: none;
+       color: inherit; 
+    }
 }
 
 .btn{
@@ -58,4 +62,10 @@
 }
 .wrapper{
     max-width: 2000px;
+}
+
+.flex_row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }

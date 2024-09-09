@@ -14,10 +14,10 @@ const maxWindowSash = 4; //  Максимальное кол-во створок
 
 
 const menuArr = [
-    {id: 0, name: "Проекты"},
-    {id: 1, name: "Обо мне"},
-    {id: 2, name: "Блог"},
-    {id: 3, name: "Контакты"}
+    {id: 0, name: "Проекты", link: "/"},
+    {id: 1, name: "Обо мне", link: "/"},
+    {id: 2, name: "Блог", link: "https://vc.ru/u/3674302"},
+    {id: 3, name: "Контакты", link: "/"}
 
 ];
 
