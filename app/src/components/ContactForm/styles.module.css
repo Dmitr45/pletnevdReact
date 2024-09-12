@@ -1,0 +1,149 @@
+.form {
+  max-width: 1150px;
+  width: 1150px;
+  height: 400px;
+  position: fixed;
+  top: 70;
+  z-index: 85;
+  background-color: #f35248;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 50px;
+}
+.form_wrap {
+  flex: 1 1 400px;
+  position: relative;
+}
+.form_wrap .title {
+  margin: 0 auto;
+  color: #fff;
+  font-size: 37px;
+  font-weight: 700;
+  line-height: 38px;
+  max-width: 592px;
+  margin-bottom: 52px;
+}
+.form_wrap .postTitle {
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 20px;
+  color: #fff;
+  margin-bottom: 11px;
+}
+.form_wrap .contact {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+}
+.form_wrap .contact input {
+  flex: 1 1 200px;
+  font-size: 18px;
+  line-height: 26px;
+  padding-left: 10px;
+}
+.form_wrap .message {
+  margin: 20px 0;
+}
+.form_wrap .message textarea {
+  width: calc(100% - 10px);
+  height: 100px;
+  padding-left: 10px;
+  font-size: 18px;
+  line-height: 26px;
+}
+.form_wrap input[type=file] {
+  display: none;
+}
+.form_wrap .inputFile {
+  width: calc(100% - 70px);
+  height: 50px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 50px 0 10px;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 18px;
+  line-height: 50px;
+  position: relative;
+  border: #fff dashed 2px;
+  cursor: pointer;
+}
+.form_wrap .inputFile::before {
+  content: attr(data-placheholder);
+  color: #ffffff;
+}
+.form_wrap .inputFile::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% - 50px);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 18px;
+  height: 25px;
+  background: url(./img/add_file.svg) no-repeat center;
+}
+.form_wrap .FormBtn {
+  margin-top: 24px;
+}
+.form_wrap .FormBtn button.submit {
+  font-size: 20px;
+  line-height: 20px;
+  min-width: 214px;
+  cursor: pointer;
+  height: 40px;
+  outline: none;
+  padding: 0 30px;
+  background: transparent;
+  text-align: center;
+  border: 2px solid #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  font-size: 18px;
+  line-height: 26px;
+}
+.form_wrap .FormBtn button.submit:hover {
+  color: #f35248;
+  background-color: #fff;
+  border: #f35248 1px solid;
+}
+.form_img {
+  flex: 1 1 400px;
+  height: 100%;
+  background-color: #f35248;
+  background-image: url(./img/CForm.png);
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: 30px;
+  background-blend-mode: luminosity;
+  opacity: 0.7;
+  transform: scale(-1, 1);
+}
+
+@media (min-width: 1200px) {
+  .form {
+    left: 295px;
+    width: calc(100% - 295px);
+  }
+}
+@media (min-width: 1920px) {
+  .form {
+    left: 296px;
+    width: calc(100% - 295px);
+  }
+}

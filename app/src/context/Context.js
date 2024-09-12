@@ -1,5 +1,5 @@
 import { createContext, useState, useCallback, useRef, useEffect } from 'react';
-// import axios from "axios";
+
 
 
 
@@ -10,23 +10,20 @@ import { createContext, useState, useCallback, useRef, useEffect } from 'react';
 export const useCreateAppContext = function(props) {
 
 // Входные данные: ============================================================================================================
-const maxWindowSash = 4; //  Максимальное кол-во створок
+
 
 
 const menuArr = [
     {id: 0, name: "Проекты", link: "/"},
     {id: 1, name: "Обо мне", link: "/"},
     {id: 2, name: "Блог", link: "https://vc.ru/u/3674302"},
-    {id: 3, name: "Контакты", link: "/"}
+    {id: 3, name: "Реквизиты", link: "/pay"}
 
 ];
 
 // Контекст для приложения ====================================================================================================
-
-
-
-    const [typeWindow, setTypeWindow] = useState(props.typeWindow || 1); // Колличество окон 1-4
-    const toggleTypeWindow = useCallback((num) => {setTypeWindow(num)});
+    const [cFormActive, setCFormActive] = useState(props.CFormActive || true);
+    const toggleCFormActive = useCallback((bool) => setCFormActive(bool));
 
 
     
@@ -35,7 +32,7 @@ const menuArr = [
         menuArr,  // Массив меню
 
 
-        typeWindow, toggleTypeWindow, // Кол-во створок
+        cFormActive, toggleCFormActive, // Появление контактной формы
 
 };
 }

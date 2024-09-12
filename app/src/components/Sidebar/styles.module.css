@@ -4,7 +4,8 @@
   max-width: 300px;
 }
 .sidebar__inner {
-  display: block;
+  display: flex;
+  flex-direction: column;
   height: inherit;
   position: relative;
   z-index: 100;
@@ -17,6 +18,7 @@
 }
 .sidebar__logo {
   margin-bottom: 30px;
+  flex: 0 0 100px;
 }
 .sidebar__logo .logo {
   padding-top: 40px;
@@ -27,6 +29,7 @@
 }
 .sidebar__photo {
   margin-bottom: 87px;
+  flex: 0 0 250px;
 }
 .sidebar__photo .photo {
   width: 230px;
@@ -38,6 +41,9 @@
   border-radius: 50%;
   border-bottom: #fa2424 3px solid;
   border-right: #fa2424 3px solid;
+}
+.sidebar__menu {
+  flex: 1 1 900px;
 }
 .sidebar__menu .menu__list {
   list-style: none;
@@ -74,10 +80,25 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+.sidebar .QRcode {
+  flex: 0 0 300px;
+  text-align: center;
+}
+.sidebar .QRcode div {
+  font-weight: bold;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: inherit;
+}
+.sidebar .QRcode img {
+  margin: 20px 0 20px 0;
+}
 
 @media (min-width: 1200px) {
   .sidebar__inner {
-    display: block;
+    display: flex;
     height: inherit;
     position: relative;
     z-index: 100;

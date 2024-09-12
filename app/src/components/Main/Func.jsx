@@ -4,10 +4,13 @@ import "../../styles.css";
 import Sidebar from "../Sidebar/Func";
 import Header from "../Header/Func";
 import Content from "../Content/Func";
+import { useContext } from "react";
 
 
 
 export default function Func(){ //Main
+
+
 
 return (
     <div>

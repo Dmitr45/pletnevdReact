@@ -3,6 +3,7 @@ import styles from './styles.module.css';
 import "../../styles.css";
 import logo from "./img/logo.jpg";
 import {useAppContext} from  "../../context/ContextProvider";
+import ContactForm from "../ContactForm/Func";
 
 
 
@@ -11,7 +12,10 @@ export default function Func(){ //Header
 
 
 let [logoVisibility,setLogoVisibility ] = useState(false);
-const  {menuArr} =  useAppContext(); // Массив элементов меню
+const  {menuArr, // Массив элементов меню
+        cFormActive, toggleCFormActive // Активация контактной формы
+        } =  useAppContext(); 
+
 
 let menuItems = menuArr.map((Obj)=> {return( <div key={Obj.id} className={styles.header__menu__item}><a href={Obj.link} target="blank">{Obj.name}</a></div>)});
 
@@ -41,12 +45,14 @@ return(
             <a href="tel:+79529025968">+7 (952)-902-5968</a>
         </div>
 
-        <div className={styles.header__btn + " " + "btn"}>
+        
+        <div className={styles.header__btn + " " + "btn"} onClick={()=>{  toggleCFormActive(!cFormActive)  }}>
             Оставить заявку
         </div>
 
 
     </div>
+    { cFormActive ? <ContactForm/> : "" }
 </div>
 
 )};

@@ -3,20 +3,21 @@
     flex: 0 0 300px;
     max-width: 300px;
     &__inner{
-        display: block;
+        display: flex;
+        flex-direction: column;           
         height: inherit;
         position: relative;
         z-index: 100;
         background-color: #ffffff;
         -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        // padding-top: 40px;
         height: calc(100vh - 45px);
         padding-left: 35px;
         border-right: 1px solid #e0e0e0;
     }
     &__logo{
         margin-bottom: 30px;
+        flex: 0 0 100px;
         .logo{
             padding-top: 40px;
             font-size: 32px;
@@ -27,6 +28,7 @@
     }
     &__photo{
         margin-bottom: 87px;
+        flex: 0 0 250px;
         .photo{
             width: 230px;
             height: 230px;
@@ -40,6 +42,7 @@
         }
     }
     &__menu{
+        flex: 1 1 900px;
         .menu{
             &__list{
                 list-style: none;
@@ -78,11 +81,25 @@
             }
         }
     }
+    .QRcode{
+        flex: 0 0 300px;
+        text-align: center;
+        div{
+        font-weight: bold;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: inherit;}
+        img{
+            margin: 20px 0 20px 0;
+        }
+    }
 
 }
 @media (min-width: 1200px) {
     .sidebar__inner {
-    display: block;
+    display: flex;
     height: inherit;
     position: relative;
     z-index: 100;
