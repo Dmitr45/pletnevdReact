@@ -25,6 +25,9 @@ const menuArr = [
     const [cFormActive, setCFormActive] = useState(props.CFormActive || true);
     const toggleCFormActive = useCallback((bool) => setCFormActive(bool));
 
+    const [cFormSent, setCFormSent] = useState(props.CFormSent || false);
+    const toggleCFormSent = useCallback((bool) => setCFormSent(bool));
+
 
     
     
@@ -33,6 +36,7 @@ const menuArr = [
 
 
         cFormActive, toggleCFormActive, // Появление контактной формы
+        cFormSent, toggleCFormSent, //  Отправлено ли сообщение из  контактной формы
 
 };
 }

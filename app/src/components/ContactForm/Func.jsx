@@ -8,57 +8,85 @@ import { useForm, FormProvider, useFormContext } from "react-hook-form";
 
 
 export default function Func(){ //Form
+    const {cFormSent, toggleCFormSent} = useAppContext(); //  Отправлено ли сообщение из  контактной формы
     const methods = useForm();
     const { register, handleSubmit } = methods;
-    function onSubmit(dataForm) {TelegramMassage(dataForm.InputName, dataForm.InputTelegram, dataForm.InputMassage)};
+
+
+    function onSubmit(dataForm) {
+        TelegramMassage(dataForm.InputName, dataForm.InputTelegram, dataForm.InputMassage, dataForm.InputFile);
+        localStorage.setItem("UserName", dataForm.InputName);
+        localStorage.setItem("UserTelegram", dataForm.InputTelegram);      
+        toggleCFormSent(!cFormSent);
+    };
 
 
 function InputName() {
-    const { register } = useFormContext() // retrieve all hook methods
-    return <input {...register("InputName", { required: true })}  type="text"  placeholder="Ваше имя"/>
-    }
+    const { register } = useFormContext(); // retrieve all hook methods
+    return <input {...register("InputName", {required: true})} required type="text"  placeholder="Ваше имя" defaultValue={localStorage.getItem("UserName") ? localStorage.getItem("UserName"): "" }/>
+    };
 
 function InputTelegram() {
-    const { register } = useFormContext() // retrieve all hook methods
-    return <input {...register("InputTelegram", { required: true })}  type="text"  placeholder="@telegram"/>
-    }
+    const { register } = useFormContext(); // retrieve all hook methods
+    return <input {...register("InputTelegram", { required: true })} required  type="text"  placeholder="@telegram"  defaultValue={localStorage.getItem("UserTelegram") ? localStorage.getItem("UserTelegram") : "" }/>
+    };
 
 function InputMassage() {
-    const { register } = useFormContext() // retrieve all hook methods
-    return <textarea {...register("InputMassage", { required: true })}  type="text"  placeholder="Описание или пожелание"/>
-    }
+    const { register } = useFormContext(); // retrieve all hook methods
+    return <textarea {...register("InputMassage", { required: true })} required type="text"  placeholder="Описание или пожелание"/>
+    };
 
 function InputFile() {
-    const { register } = useFormContext() // retrieve all hook methods
-    return <input {...register("InputFile")}  type="file"  placeholder="Описание или пожелание"/>
-    }
+    const { register } = useFormContext(); // retrieve all hook methods
+    return <label htmlFor="InputFile" >
+                <input id="InputFile" {...register("InputFile")}  type="file"  placeholder="Описание или пожелание"/>            
+                <div className={styles.inputFile} data-placheholder='Прикрепить документ' >
+                
+                </div>
+            </label>
+
+    };
+
+function FormInputs() {
+return <FormProvider {...methods}>
+        <div className={styles.title}>Жду предложений!</div>
+        <div className={styles.postTitle}>Закажите разработку веб-приложения</div>
+<form   onSubmit={methods.handleSubmit(onSubmit)}>
+                        <div className={styles.contact}>
+                            <InputName/>
+                            <InputTelegram/>
+                        </div>
+
+                        <div className={styles.message}>
+                            <InputMassage/>
+                        </div>
+                        <div>
+                            <InputFile/>
+                        </div>
+                        <div className={styles.FormBtn + " " + ".btn"} >
+                                <button className={styles.submit} type="submit" >Отправить</button>
+                        </div>
+</form>
+</FormProvider>
+};
+
+function FormResult(){
+return   <div>
+                <div className={styles.title}>Спасибо {localStorage.getItem("UserName")}! <br/>cообщение отправлено</div>
+                <div className={styles.postTitle}>Я обязательно отвечу в течение 24 часов на телеграм: <br/> {localStorage.getItem("UserTelegram")}</div>
+                <div className={styles.FormBtn + " " + ".btn"} >                
+                    <button className={styles.submit} onClick={()=>{toggleCFormSent(!cFormSent)}} >Отправить еще одно сообщение</button>
+                </div>
+        </div> 
+};
+
+
+
 
 return(
 <div className={styles.form}>
     <div className={styles.form_wrap}>
-    <div className={styles.title}>Я жду предложений!</div>
-    <div className={styles.postTitle}>Заказать разработку веб-приложения</div>
-
-    <FormProvider {...methods}>
-    <form   onSubmit={methods.handleSubmit(onSubmit)}>
-                            <div className={styles.contact}>
-                                <InputName/>
-                                <InputTelegram/>
-                            </div>
-
-                            <div className={styles.message}>
-                                <InputMassage/>
-                            </div>
-                            <label htmlFor="InputFile" >
-                                <InputFile/>
-                                <div className={styles.inputFile} data-placheholder='Прикрепить документ' ></div>   
-                            </label>                  
-                            <div class={styles.FormBtn + " " + ".btn"} >
-									<button className={styles.submit} type="submit" >Отправить</button>
-							</div>
-    </form>
-</FormProvider>
-
+        { !cFormSent ?  <FormInputs/> :  <FormResult/>}
     </div>
     <div className={styles.form_img}></div>
 </div>

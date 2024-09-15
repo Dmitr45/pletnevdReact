@@ -17,7 +17,7 @@ const  {menuArr, // Массив элементов меню
         } =  useAppContext(); 
 
 
-let menuItems = menuArr.map((Obj)=> {return( <div key={Obj.id} className={styles.header__menu__item}><a href={Obj.link} target="blank">{Obj.name}</a></div>)});
+let menuItems = menuArr.map((Obj)=> {return( <div key={Obj.id} className={styles.header__menu__item}><a href={Obj.link} target="_blank">{Obj.name}</a></div>)});
 
 console.log();
 return(

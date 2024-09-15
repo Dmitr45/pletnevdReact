@@ -23,9 +23,10 @@ return (
                 <div className={styles.menu}>
                     <ul className={styles.menu__list}>
                         <li className={styles.menu__item}><div>Верстка HTML/SCSS</div></li>
-                        <li className={styles.menu__item}><div>Верстка ReactJs</div></li>
-                        <li className={styles.menu__item}><div>Приложение ReactJs</div></li>
-                        <li className={styles.menu__item}><div>Сайт ReactJs/NextJs </div></li>
+                        <li className={styles.menu__item}><div>Верстка React.js</div></li>
+                        <li className={styles.menu__item}><div>Приложение React.js</div></li>
+                        <li className={styles.menu__item}><div>Сайт React.js/Next.js </div></li>
+                        <li className={styles.menu__item}><div>Обучение React.js </div></li>
                     </ul>
                 </div>
            
