@@ -4,6 +4,7 @@ import "../../styles.css";
 import logo from "./img/logo.jpg";
 import {useAppContext} from  "../../context/ContextProvider";
 import ContactForm from "../ContactForm/Func";
+import {Routes, Route, Link} from 'react-router-dom';
 
 
 
@@ -17,7 +18,7 @@ const  {menuArr, // Массив элементов меню
         } =  useAppContext(); 
 
 
-let menuItems = menuArr.map((Obj)=> {return( <div key={Obj.id} className={styles.header__menu__item}><a href={Obj.link} target="_blank">{Obj.name}</a></div>)});
+let menuItems = menuArr.map((Obj)=> {return( <div key={Obj.id} className={styles.header__menu__item}><Link to={Obj.link}>{Obj.name}</Link></div>)});
 
 console.log();
 return(
@@ -47,7 +48,7 @@ return(
 
         
         <div className={styles.header__btn + " " + "btn"} onClick={()=>{  toggleCFormActive(!cFormActive)  }}>
-            Оставить заявку
+            <span>Оставить заявку</span>
         </div>
 
 

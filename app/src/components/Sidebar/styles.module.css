@@ -81,8 +81,9 @@
   transform: translateY(-50%);
 }
 .sidebar .QRcode {
-  flex: 0 0 300px;
-  text-align: center;
+  flex: 1 1 400px;
+  padding-left: 40px;
+  padding-top: 15px;
 }
 .sidebar .QRcode div {
   font-weight: bold;
@@ -93,9 +94,14 @@
   color: inherit;
 }
 .sidebar .QRcode img {
-  margin: 20px 0 20px 0;
+  margin: 1px 0 20px 0;
 }
 
+@media (max-width: 1199px) {
+  .sidebar {
+    display: none;
+  }
+}
 @media (min-width: 1200px) {
   .sidebar__inner {
     display: flex;

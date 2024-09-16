@@ -17,12 +17,12 @@ const menuArr = [
     {id: 0, name: "Проекты", link: "/"},
     {id: 1, name: "Обо мне", link: "/"},
     {id: 2, name: "Блог", link: "https://vc.ru/u/3674302"},
-    {id: 3, name: "Реквизиты", link: "/pay"}
+    {id: 3, name: "Реквизиты", link: "/Requisites"}
 
 ];
 
 // Контекст для приложения ====================================================================================================
-    const [cFormActive, setCFormActive] = useState(props.CFormActive || true);
+    const [cFormActive, setCFormActive] = useState(props.CFormActive || false);
     const toggleCFormActive = useCallback((bool) => setCFormActive(bool));
 
     const [cFormSent, setCFormSent] = useState(props.CFormSent || false);

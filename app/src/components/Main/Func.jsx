@@ -3,8 +3,10 @@ import styles from "./styles.module.css";
 import "../../styles.css";
 import Sidebar from "../Sidebar/Func";
 import Header from "../Header/Func";
-import Content from "../Content/Func";
+import Requisites from "../Route/Requisites";
+import Page404 from "../Route/Page404";
 import { useContext } from "react";
+import {Routes, Route, link} from 'react-router-dom';
 
 
 
@@ -20,7 +22,14 @@ return (
                 <Header/>
                 <div className="flex_row">
                     <Sidebar/>
-                    <Content/>
+                    <div className={styles.content}>
+                        <Routes>
+                            <Route path="/" element={<Requisites/>}></Route>
+                            <Route path="/Requisites" element={<Requisites/>}></Route>
+                            <Route path="*" element={<Page404/>}></Route>
+                        </Routes>
+                    </div>
+
                 </div>
 
             </div>    
