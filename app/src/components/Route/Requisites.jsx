@@ -9,7 +9,9 @@ export default function Requisites(){ //Content
 
 
 return(
+<div className={styles.requisites}>
 <div className={styles.pageContainer}>
+    <div className={styles.flexLeft}>
     <div className={styles.headTitle}>Реквизиты</div>
 
 <div className={styles.flexRow}>
@@ -18,7 +20,8 @@ return(
     ПЛЕТНЕВ ДМИТРИЙ НИКОЛАЕВИЧ</p>
     </div>
     <div className={styles.flexRowItems}>
-        <img src='./img/GRrequisit.png'/>
+        <span>&nbsp;Сканируй и плати!</span><br/>
+        <img src='/img/Pay.jpg'/>
     </div>
     
 </div>
@@ -84,6 +87,8 @@ return(
         <p>Корреспондентский счет банка<br/>
         30101810145250000974</p>
     </div>
+</div>
+</div>
 </div>
 </div>
 )};

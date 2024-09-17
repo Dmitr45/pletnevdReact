@@ -1,12 +1,19 @@
+.content {
+  webkit-box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 70px;
+}
+
 @media (min-width: 1200px) {
   .content {
-    width: calc(100% - 295px);
-    padding-top: 120px;
+    padding-left: 270px;
+    width: 1225px;
+    padding-top: 70px;
   }
 }
 @media (max-width: 1199px) {
   .content {
-    padding-top: 120px;
+    padding-top: 70px;
     width: 100%;
   }
 }

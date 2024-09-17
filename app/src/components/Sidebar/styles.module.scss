@@ -2,6 +2,7 @@
     height: 100vh;
     flex: 0 0 300px;
     max-width: 300px;
+    position: fixed;
     &__inner{
         display: flex;
         flex-direction: column;           
@@ -49,7 +50,7 @@
                 .menu__item{
                     margin-bottom: 17px;
                     color: #333333;
-                    div{
+                    div, .link{
                         -webkit-transition: 200ms;
                         -o-transition: 200ms;
                         transition: 200ms;

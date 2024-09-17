@@ -2,6 +2,7 @@
   height: 100vh;
   flex: 0 0 300px;
   max-width: 300px;
+  position: fixed;
 }
 .sidebar__inner {
   display: flex;
@@ -52,7 +53,7 @@
   margin-bottom: 17px;
   color: #333333;
 }
-.sidebar__menu .menu__list .menu__item div {
+.sidebar__menu .menu__list .menu__item div, .sidebar__menu .menu__list .menu__item .link {
   -webkit-transition: 200ms;
   -o-transition: 200ms;
   transition: 200ms;

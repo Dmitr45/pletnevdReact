@@ -1,5 +1,5 @@
 .header {
-  max-width: 1200px;
+  max-width: 1225px;
   position: fixed;
   top: 0;
   left: 0px;
@@ -98,8 +98,8 @@
 
 @media (min-width: 1200px) {
   .header {
-    left: 295px;
-    width: calc(100% - 295px);
+    left: 270px;
+    width: calc(100% - 270px);
   }
 }
 @media (min-width: 1920px) {
