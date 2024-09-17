@@ -32,10 +32,10 @@ return (
                 </div>
            
             </div>
-            <div className={styles.QRcode}>
+            {/* <div className={styles.QRcode}>
                 <div>Сканируй и плати!</div>
-                <img src="./img/Pay.jpg" width={150+"px"} alt="" />  
-            </div>
+                <img src="/img/Pay.jpg" width={150+"px"} alt="" />  
+            </div> */}
  
         </div>
 
