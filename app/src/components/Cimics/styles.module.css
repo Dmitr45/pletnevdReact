@@ -1,0 +1,81 @@
+.Comics {
+  height: 100%;
+  width: 1000px;
+}
+.Comics .Dmitrii blockquote {
+  position: relative;
+  text-align: center;
+  width: 450px;
+  margin: 16px 16px 34px 16px;
+  border: 2px solid #fa2424;
+  border-radius: 20px;
+  padding: 16px 24px;
+  font-size: 18px;
+}
+.Comics .Dmitrii blockquote:before,
+.Comics .Dmitrii blockquote:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.Comics .Dmitrii blockquote:before {
+  left: 30px;
+  bottom: -32px;
+  border: 16px solid;
+  border-color: #fa2424 transparent transparent #fa2424;
+}
+.Comics .Dmitrii blockquote:after {
+  left: 35px;
+  bottom: -21px;
+  border: 12px solid;
+  border-color: #fff transparent transparent #fff;
+}
+.Comics .Dmitrii blockquote cite {
+  position: absolute;
+  bottom: -28px;
+  left: 62px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fa2424;
+}
+.Comics .Guest {
+  float: right;
+}
+.Comics .Guest blockquote {
+  width: 450px;
+  position: relative;
+  text-align: center;
+  margin: 16px 16px 34px 16px;
+  border: 2px solid #337AB7;
+  border-radius: 20px;
+  padding: 16px 24px;
+  font-size: 18px;
+}
+.Comics .Guest blockquote:before,
+.Comics .Guest blockquote:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.Comics .Guest blockquote:before {
+  right: 30px;
+  bottom: -32px;
+  border: 16px solid;
+  border-color: #337AB7 #337AB7 transparent transparent;
+}
+.Comics .Guest blockquote:after {
+  right: 35px;
+  bottom: -21px;
+  border: 12px solid;
+  border-color: #fff #fff transparent transparent;
+}
+.Comics .Guest blockquote cite {
+  position: absolute;
+  bottom: -28px;
+  right: 62px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #337AB7;
+}
