@@ -2,6 +2,7 @@
 height: 100%;
 width: 1000px;
     .Dmitrii{
+        margin-right: 10px;
         blockquote {
             position: relative;
             text-align: center;
@@ -41,7 +42,7 @@ width: 1000px;
         }
     }
     .Guest{
-        float: right;
+        margin-left: calc(100% - 460px);
         blockquote {
             width: 450px;
             position: relative;
@@ -80,5 +81,8 @@ width: 1000px;
             color: #337AB7;
         }
     }
-    
+    input {
+        all: unset;
+        border-bottom: 1px solid #337AB7;
+    }
 }

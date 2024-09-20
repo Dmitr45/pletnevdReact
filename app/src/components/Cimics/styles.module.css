@@ -2,6 +2,9 @@
   height: 100%;
   width: 1000px;
 }
+.Comics .Dmitrii {
+  margin-right: 10px;
+}
 .Comics .Dmitrii blockquote {
   position: relative;
   text-align: center;
@@ -40,7 +43,7 @@
   color: #fa2424;
 }
 .Comics .Guest {
-  float: right;
+  margin-left: calc(100% - 460px);
 }
 .Comics .Guest blockquote {
   width: 450px;
@@ -78,4 +81,8 @@
   font-size: 15px;
   font-weight: bold;
   color: #337AB7;
+}
+.Comics input {
+  all: unset;
+  border-bottom: 1px solid #337AB7;
 }

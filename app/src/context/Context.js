@@ -22,9 +22,9 @@ const menuArr = [
 ];
 
 
-
+localStorage.clear();
 // Контекст для приложения ====================================================================================================
-    const [UserName, setUserName] = useState(props.UserName || "Гость");
+    const [UserName, setUserName] = useState(props.UserName || localStorage.getItem("UserName") || "Гость");
     const toggleUserName = useCallback((str) => setUserName(str));
 
 
