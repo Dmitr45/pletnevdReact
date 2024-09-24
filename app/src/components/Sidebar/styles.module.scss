@@ -33,7 +33,7 @@
         .photo{
             width: 230px;
             height: 230px;
-            background-image: url("img/PletnevDmitrii.jpg") ;
+            //background-image: url("img/PletnevDmitrii.jpg") ;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 0 0;
@@ -117,13 +117,11 @@
     background-color: #ffffff;
     -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    // padding-top: 37.4px;
-    // padding-left: 35px;
+
 }
 }
 @media (min-width: 1400px) {
     .sidebar__inner {
-    // padding-top: 48px;
-    // padding-left: 45px;
+
 }
 }

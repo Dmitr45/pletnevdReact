@@ -1,7 +1,6 @@
 import {useState} from 'react';
 import styles from './styles.module.css';
 import "../../styles.css";
-import logo from "./img/logo.jpg";
 import {useAppContext} from  "../../context/ContextProvider";
 import ContactForm from "../ContactForm/Func";
 import {Routes, Route, Link} from 'react-router-dom';
@@ -10,6 +9,7 @@ import {Routes, Route, Link} from 'react-router-dom';
 
 export default function Func(){ //Header
 
+let logo = {"background-image" : `url(${process.env.PUBLIC_URL}/img/logo.jpg)`}
 
 
 let [logoVisibility,setLogoVisibility ] = useState(false);

@@ -5,8 +5,8 @@ import { HashLink } from 'react-router-hash-link';
 
 
 export default function Func(){ // Sidebar
-    const  {menuArr} =  useAppContext(); // Массив элементов меню
-
+const  {menuArr} =  useAppContext(); // Массив элементов меню
+let Photo = { "background-image" : `url(${process.env.PUBLIC_URL}/img/PletnevDmitrii.jpg)`};
 const itemMenu =   menuArr.map((elem)=>{return <li index={elem.id}>{elem.name}</li> });  
 return (
     <div className={styles.sidebar}>
@@ -17,7 +17,7 @@ return (
                 </div>
             </div>
             <div className={styles.sidebar__photo}>
-                <div className={styles.photo}>
+                <div className={styles.photo} style={Photo}>
                 </div>
             </div>
             <div className={styles.sidebar__menu}>

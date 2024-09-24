@@ -11,6 +11,7 @@ export default function Func(){ //Form
     const {cFormSent, toggleCFormSent} = useAppContext(); //  Отправлено ли сообщение из  контактной формы
     const methods = useForm();
     const { register, handleSubmit } = methods;
+    let CformBackground = { "background-image" : `url(${process.env.PUBLIC_URL}/img/CForm.png)`};
 
 
     function onSubmit(dataForm) {
@@ -88,7 +89,7 @@ return(
     <div className={styles.form_wrap}>
         { !cFormSent ?  <FormInputs/> :  <FormResult/>}
     </div>
-    <div className={styles.form_img}></div>
+    <div className={styles.form_img} style={CformBackground}></div>
 </div>
 
 )};

@@ -7,6 +7,7 @@ import {useAppContext} from  "../../context/ContextProvider";
 
 export default function Abaut(){ //Content
 
+let BackgroundImage = { "background-image" : `url(${process.env.PUBLIC_URL}/img/Abaut.png)`};
 
 return(
 <div className={styles.Abaut}>
@@ -69,7 +70,7 @@ return(
     <p>React Хуки (hooks). Данное нововведение появилось в React версии 16.8. Хуки позволяют использовать состояние и другие возможности React JS без написания классов. В данном курсе мы мы изучим, как работает хук useState.</p>
     </div>
     <div className={styles.flexRight}>
-        <div className={styles.AbautImg}></div> 
+        <div className={styles.AbautImg} style={BackgroundImage}></div> 
     </div>
     </div>
 </div>
