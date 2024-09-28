@@ -1,1 +1,0 @@
-console.log("Запущен main.js для pletnevd.com");
