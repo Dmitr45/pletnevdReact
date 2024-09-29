@@ -1,17 +1,19 @@
 import express from "express";
+import { homeRouter } from "./src/home/home.controller.js";
+import dotenv from 'dotenv';
 
+dotenv.config(); // Инициализируем использование .env с переменными
 const app = express(); //Вызываем функцию
 
 async function main(){
     app.use(express.json()) //инициализируем возможность использовать json
-    app.all('/api' , (req, res) => { //ждем get запрос на страницу api
-        res.status(200)
-            .json({ // отправляем статус 200 и json с объектом
-            massage: 'success' // Сообщение : успех
-            })
-        })
-    app.listen(4200, ()=>{ // Слушаем порт 4200
-        console.log('Сервер запущен на 4200 порту')
+    app.use('/api' , homeRouter) // Запрос на api Передаем запрос в homeRouter
+    app.all('*', (req, res) => { // Все остальные запросы
+        res.status(404).json({message: 'Not found'}) // Возвращаем ошибку
+    });
+
+    app.listen(process.env.PORT || 4200, ()=>{ // Слушаем порт .env.PORT или 4200
+        console.log(`Сервер запущен на ${process.env.PORT} порту`)
         })
 };
 main();
