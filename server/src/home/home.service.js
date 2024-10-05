@@ -1,5 +1,6 @@
 export class HomeService{
-    createTwit(twit){
-        return twit
+    createText(jsonText){
+        const UpperText =  jsonText.text.toUpperCase();
+        return {"upperText" : UpperText}
     }
 };

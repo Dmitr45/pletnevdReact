@@ -12,14 +12,14 @@ router.post('/home', (req, res) =>{ // Путь будет http://localhost:4200
     }
 
 // Выводим основные параметры запроса в консоль
-    // console.log(req.headers);    
+    //console.log(req.headers);    
     // console.log(req.query);
     // console.log(req.body); 
 
 
     // Передаем body в сервис 
-    const twit = homeService.createTwit(req.body);
-    res.status(201).json(twit);
+    const jsonText = homeService.createText(req.body);
+    res.status(201).json(jsonText);
 
 });
 
