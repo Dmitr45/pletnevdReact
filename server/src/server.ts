@@ -1,6 +1,6 @@
-import express from "express";
-import { homeRouter } from "./src/home/home.controller.js";
-import { authMiddleware } from "./src/auth.middleware.js";
+import express, {Request, Response, NextFunction } from "express";
+import { homeRouter } from "./home/home.controller";
+import { authMiddleware } from "./auth.middleware";
 import dotenv from 'dotenv';
 
 dotenv.config(); // Инициализируем использование .env с переменными
@@ -10,14 +10,14 @@ async function main(){
     app.use(express.json()) //Инициализируем возможность использовать json
     app.use('/api' , authMiddleware , homeRouter) // Запрос на /api Передаем запрос в homeRouter
     app.get('/error', (req, res)=>{
-    throw new Error('Errore')
+    throw new Error('Error')
     });
     app.all('*', (req, res) => { // Все остальные запросы
         res.status(404).json({message: 'Not found'}) // Возвращаем ошибку
     });
 
     // Обработка ошибок должна стоять перед прямо перед listen
-    app.use((err, req, res, next) =>{
+    app.use((err:Error, req:Request, res:Response, nex: NextFunction) =>{
         console.error(err.stack)
         res.status(500).send('Что-то пошло не так')
     });

@@ -1,4 +1,6 @@
-export const authMiddleware = async (req, res, next) => { 
+import {Request, Response, NextFunction } from "express";
+
+export const authMiddleware = async (req:Request, res:Response, next: NextFunction) => { 
     // функция next() позволит нам пройти по процессу дальше
     const authHeader = req.headers.authorization; 
     if (!authHeader) { // Если в headers запроса ПУСТО в графе authorization
