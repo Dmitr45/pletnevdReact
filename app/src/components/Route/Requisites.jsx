@@ -21,7 +21,7 @@ return(
     </div>
     <div className={styles.flexRowItems}>
         <span>&nbsp;Сканируй и плати!</span><br/>
-        <img src={`${process.env.PUBLIC_URL}/img/Pay.jpg`}/>
+        <img src={`./${process.env.PUBLIC_URL}/img/Pay.jpg`}/>
     </div>
     
 </div>

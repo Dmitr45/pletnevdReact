@@ -9,7 +9,7 @@ import {Routes, Route, Link} from 'react-router-dom';
 
 export default function Func(){ //Header
 
-let logo = {"background-image" : `url(${process.env.PUBLIC_URL}/img/logo.jpg)`}
+let logo = {"background-image" : `url(./${process.env.PUBLIC_URL}/img/logo.jpg)`}
 
 
 let [logoVisibility,setLogoVisibility ] = useState(false);
