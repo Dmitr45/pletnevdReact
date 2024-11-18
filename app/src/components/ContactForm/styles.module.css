@@ -137,13 +137,13 @@
 
 @media (min-width: 1200px) {
   .form {
-    left: 295px;
-    width: calc(100% - 295px);
+    left: 270px;
+    width: calc(100% - 270px);
   }
 }
 @media (min-width: 1920px) {
   .form {
-    left: 296px;
-    width: calc(100% - 295px);
+    left: 270px;
+    width: calc(100% - 270px);
   }
 }

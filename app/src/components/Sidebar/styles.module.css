@@ -2,6 +2,7 @@
   height: 100vh;
   flex: 0 0 300px;
   max-width: 300px;
+  min-width: 300px;
   position: fixed;
 }
 .sidebar__inner {
@@ -98,7 +99,7 @@
   margin: 1px 0 20px 0;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1500px) {
   .sidebar {
     display: none;
   }

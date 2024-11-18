@@ -1,5 +1,5 @@
 .header {
-  max-width: 1225px;
+  max-width: 1700px;
   position: fixed;
   top: 0;
   left: 0px;
@@ -56,38 +56,47 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    &__item{
+    &__item {
       height: 100%;
       flex: 1 1 150px;
       line-height: 30px;
       text-align: center;
-      font-size: 24px;
-      font-weight: 600;
       cursor:pointer;
+      a {
+        font-size: 24px;
+        font-weight: 600;
+      }
     }
   }
   &__phone{
     max-width: 200px;
-    font-size: 18px;
     line-height: 26px;
     color: #333333;
-    a{text-decoration: none; color:inherit; }
+    a{
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none; 
+      color:inherit; }
   }
   &__btn{
-    border: 2px solid #fa2424;
+    border: 3px solid #fa2424;
     color: #fa2424;
     padding: 0;
     background: #ffffff;
+    span{
+      font-size: 18px;
+      font-weight: 600;
+    }
   }
   @media (max-width: 1199px) {
     .header__menu {
-      height: 100%;
       width: 100%;
       background: #ffffff;
     }
   }
   @media (min-width: 1200px) {
     .header__menu {
+      width: 100%;
       margin-right: 20px;
     }
   }
@@ -97,16 +106,19 @@
 
 
 }
-@media (min-width: 1200px) {
+
+@media (max-width: 5000px) {
   .header {
-    left: 270px;
-    width: calc(100% - 270px);
+    left: 300px;
+    width: calc(100% - 300px);
   }
+
 }
-@media (min-width: 1920px) {
+
+@media (max-width: 1500px) {
   .header {
-    left: 296px;
-    width: calc(100% - 295px);
+    left: 0px;
+    width: 100%;
   }
 
 }
