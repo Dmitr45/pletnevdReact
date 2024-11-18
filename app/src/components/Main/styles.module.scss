@@ -6,13 +6,24 @@
 
 @media (min-width: 1200px) {
     .content {
-        padding-left: 270px;
-        width: 1225px;
+        padding-left: 300px;
+        max-width: 1700px;
+        width: calc(100% - 300px);
         padding-top: 70px;
     }
 }
 @media (max-width: 1199px) {
     .content {
+        padding-left: 300px;
+        padding-top: 70px;
+        width: calc(100% - 300px);
+        
+    }
+}
+
+@media (max-width: 1500px) {
+    .content {
+        padding-left: 0px;
         padding-top: 70px;
         width: 100%;
         
