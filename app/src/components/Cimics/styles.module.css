@@ -46,7 +46,7 @@
   margin-left: calc(100% - 460px);
 }
 .Comics .Guest blockquote {
-  width: 450px;
+  width: 80%;
   position: relative;
   text-align: center;
   margin: 16px 16px 34px 16px;

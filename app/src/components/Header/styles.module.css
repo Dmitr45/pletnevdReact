@@ -91,6 +91,10 @@
   font-weight: 600;
 }
 @media (max-width: 1199px) {
+  .header .header__inner {
+    justify-content: space-around;
+    width: 90%;
+  }
   .header .header__menu {
     width: 100%;
     background: #ffffff;
