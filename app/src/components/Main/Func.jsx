@@ -7,6 +7,7 @@ import Home from "../Route/Home";
 import Abaut from "../Route/About";
 import Requisites from "../Route/Requisites";
 import Page404 from "../Route/Page404";
+import Projects from "../Route/Projects";
 import { useContext } from "react";
 import {Routes, Route, link} from 'react-router-dom';
 
@@ -29,6 +30,7 @@ return (
                             <Route path="/" element={<Home/>}></Route>
                             <Route path="/abaut" element={<Abaut/>}></Route>
                             <Route path="/requisites" element={<Requisites/>}></Route>
+                            <Route path="/projects" element={<Projects/>}></Route>
                             <Route path="*" element={<Page404/>}></Route>
                         </Routes>
                     </div>
