@@ -131,5 +131,39 @@
 }
 
 .Home{
-  height: calc(100vh - 140px);
+  //height: calc(100vh - 140px);
+}
+
+.ProjectsPage{
+  &_list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+    &_item{
+    flex: 0 0 300px;
+      }
+    }
+    &_title{
+      margin-top: 10px;
+      font-size: 32px;
+      font-size: 600;
+    }
+
+    &_flex{
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 10px;
+    }
+
+    &_promo{
+
+    }
+    &_img{
+      height: 300px;
+      width: 400px;
+      background-size: cover;
+    }
 }

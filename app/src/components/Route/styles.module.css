@@ -120,6 +120,29 @@
   transform: scale(-1, 1);
 }
 
-.Home {
-  height: calc(100vh - 140px);
+.ProjectsPage_list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.ProjectsPage_list_item {
+  flex: 0 0 300px;
+}
+.ProjectsPage_title {
+  margin-top: 10px;
+  font-size: 32px;
+  font-size: 600;
+}
+.ProjectsPage_flex {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.ProjectsPage_img {
+  height: 300px;
+  width: 400px;
+  background-size: cover;
 }
