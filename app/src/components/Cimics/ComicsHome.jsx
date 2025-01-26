@@ -82,7 +82,7 @@ let [ComicsTargetArr, setComicsTargetArr] = useState([]);
 const ComicsTarget =  (send) =>{     
                             setTimeout(()=>{
                                 setComicsTargetArr(() => { return [...ComicsTargetArr, send]})
-                        }, 1500); 
+                        }, 500); 
                         };
 
 useEffect(()=>{

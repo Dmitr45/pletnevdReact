@@ -1,16 +1,76 @@
-[
+{
+  "projects": [
     {
       "name": "HexaCore",
       "url": "https://pletnevd.com/project/HexaCore_HTML_SCSS",
       "github": "https://github.com/Dmitr45/HexaCore_HTML_SCSS",
-      "img": "HexaCore.JPG",
-      "text": " Создать файл index.html и сформировать в нем корректную структуру документа в соответствии с макетом. Корректность определяется соответствием использованных тегов их семан https://disk.yandex.ru/d/RXxq6s_9wJRS4Q тике и отсутствием ошибок на валидаторе.    Добавить стили и изображения в соответствии с макетом.В качестве ответа отправляете:"
+      "img": "https://pletnevd.com/project/HexaCore_HTML_SCSS/Promo.JPG",
+      "text": "Лабораторная работа студенту на заказ - верстка по шаблону Figma без адаптации под разные разрешения экрана. Выбрали разрешение экрана 1200px.  JavaScript использовать нельзя.",
+      "figma": "https://www.figma.com/design/SfVMkGZuEFa1XJxR2n7FEw/Web2024-v4?node-id=1-23&t=xxlbyDTwhSTcH04z-1",
+      "stack": "HTML, SCSS, Figma"
     },
     {
-      "name": "HexaCore",
-      "url": "https://pletnevd.com/project/HexaCore_HTML_SCSS",
-      "github": "https://github.com/Dmitr45/HexaCore_HTML_SCSS",
-      "img": "../../public/img/Projects/HexaCore.JPG",
-      "text": " Создать файл index.html и сформировать в нем корректную структуру документа в соответствии с макетом. Корректность определяется соответствием использованных тегов их семан https://disk.yandex.ru/d/RXxq6s_9wJRS4Q тике и отсутствием ошибок на валидаторе.    Добавить стили и изображения в соответствии с макетом.В качестве ответа отправляете:"
+      "name": "Window order calculator",
+      "url": "https://evoplast.ru/aljuminievye-okna/",
+      "github": "https://github.com/Dmitr45/WindowCalcReact",
+      "img": "https://pletnevd.com/project/WindowCalcReact/Promo.JPG",
+      "text": "Калькулятор расчета стоимости услуг установки евроокон. Результат обсчета может отправляться клиенту и менеджеру на электронную почту. Калькулятор можно встроить в любую html страницу. В данном случае у клиента сайт на Wordpress",
+      "figma": "",
+      "stack": "React.js, SCSS"
+    },
+    {
+      "name": "Currency сonversion сalculator",
+      "url": "https://pletnevd.com/project/Calc-converter-React/calc/build/index.html",
+      "github": "https://github.com/Dmitr45/Calc-converter-React",
+      "img": "https://pletnevd.com/project/Calc-converter-React/calc/build/Promo.JPG",
+      "text": "Калькулятор расчета конвертации криптовалют. Калькулятор можно встроить в любую html страницу. В данном случае у клиента сайт на Wordpress.",
+      "figma": "",
+      "stack": "React.js, SCSS"
+    },
+    {
+      "name": "Banner Cost Calculator",
+      "url": "https://pletnevd.com/project/Calc-Banner-ReactJS/app/build/index.html",
+      "github": "https://github.com/Dmitr45/Calc-Banner-ReactJS",
+      "img": "https://pletnevd.com/project/Calc-Banner-ReactJS/app/build/Promo.JPG",
+      "text": "Калькулятор расчета стоимости печати баннеров. Калькулятор можно встроить в любую html страницу. В данном случае у клиента сайт на Wordpress.",
+      "figma": "",
+      "stack": "React.js, SCSS"
+    },
+    {
+      "name": "Gitto-Bulangeria",
+      "url": "https://pletnevd.com/project/Gitto-Bulangeria/index.html",
+      "github": "https://github.com/Dmitr45/Gitto-Bulangeria",
+      "img": "https://pletnevd.com/project/Gitto-Bulangeria/Promo.JPG",
+      "text": "Лендинг пекарни французских булок. Адаптивный сайт реально существующего бизнеса.",
+      "figma": "https://www.figma.com/design/ZfUBYY8TKcF4Fze9aU9bcG/Untitled-(1)-(Copy)?node-id=0-1&t=pyGKYIv2I0942FOU-1",
+      "stack": "jQuery, HTML, SCSS, Figma"
+    },
+    {
+      "name": "Tendril",
+      "url": "https://pletnevd.com/project/tendril-nsk/index.html",
+      "github": "https://github.com/Dmitr45/tendril-nsk_jQuery_SCSS",
+      "img": "https://pletnevd.com/project/tendril-nsk/Promo.JPG",
+      "text": "Лендинг парикмахерской Tendril. Адаптивный сайт реально существующего бизнеса.",
+      "figma": "https://www.figma.com/board/zILbS6cZSzIR3C0ASATfS0/Diagram---013?node-id=0-1&t=J19fQ6LmJjAGmYmJ-1",
+      "stack": "jQuery, HTML, CSS, Figma"
+    },
+    {
+      "name": "Pletnevd",
+      "url": "https://pletnevd.com",
+      "github": "",
+      "img": "https://pletnevd.com/img/Promo.JPG",
+      "text": "Данный сайт создан в качестве ознокомительного ресурса. Также, на нем размещается ваш заказ и вы можете посмотреть промежуточный результат моей работы.",
+      "figma": "",
+      "stack": "React.js, SCSS"
+    },
+    {
+      "name": "API Pletnevd",
+      "url": "https://pletnevd.com/api",
+      "github": "",
+      "img": "https://pletnevd.com/img/PromoServer.JPG",
+      "text": "Мой сервер. На нем мы отрабатывем сервисы, которые должны работать на вашем сайте. Вашим приложениям необходимо получать инфу с тестового api, чтобы тестировать REST API до релиза.",
+      "figma": "",
+      "stack": "Node.js, Express, Prisma"
     }
   ]
+}

@@ -121,6 +121,7 @@
 }
 
 .ProjectsPage_list {
+  width: calc(100% - 30px);
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -128,9 +129,14 @@
 }
 .ProjectsPage_list_item {
   flex: 0 0 300px;
+  border: 1px solid #888;
+  border-radius: 15px;
+  padding: 15px;
 }
 .ProjectsPage_title {
   margin-top: 10px;
+}
+.ProjectsPage_title a {
   font-size: 32px;
   font-size: 600;
 }
@@ -138,8 +144,28 @@
   margin-top: 10px;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 10px;
+}
+.ProjectsPage_promo {
+  flex: 0 0 400px;
+}
+.ProjectsPage_text {
+  flex: 1 0 400px;
+  padding: 30px;
+  text-align: justify;
+}
+.ProjectsPage_gitFigma {
+  flex: 0 0 50px;
+  width: height;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.ProjectsPage_gitFigma img {
+  height: 100px;
 }
 .ProjectsPage_img {
   height: 300px;
