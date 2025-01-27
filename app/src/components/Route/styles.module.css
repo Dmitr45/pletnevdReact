@@ -58,7 +58,7 @@
     margin-right: 30px;
   }
 }
-@media (min-width: 300px) {
+@media (min-width: 250px) {
   .pageContainer .pageContainer {
     padding-left: 30px;
     margin-right: none;
