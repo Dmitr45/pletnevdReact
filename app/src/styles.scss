@@ -25,6 +25,10 @@
     }
 }
 
+html{
+    width: 100vw;
+}
+
 .btn{
     cursor: pointer;
     display: -webkit-inline-box;
@@ -59,6 +63,7 @@
     width: 1500px;
     padding-left: 30px;
     margin-right: 30px;
+
 }
 .wrapper{
     max-width: 2000px;

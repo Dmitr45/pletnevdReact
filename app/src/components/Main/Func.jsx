@@ -21,25 +21,20 @@ return (
     <div>
         <AppContextProvider>
         <div className={"wrapper"}>
-            <div className={styles.sidebar}>
-                <Header/>
+                {/* <Header/> */}
                 <div className="flex_row">
-                    <Sidebar/>
+                    {/* <Sidebar/> */}
                     <div className={styles.content}>
-                        <Routes>
+                        {/* <Routes>
                             <Route path="/" element={<Home/>}></Route>
                             <Route path="/abaut" element={<Abaut/>}></Route>
                             <Route path="/requisites" element={<Requisites/>}></Route>
                             <Route path="/projects" element={<Projects/>}></Route>
                             <Route path="*" element={<Page404/>}></Route>
-                        </Routes>
+                        </Routes> */}
                     </div>
-
                 </div>
-
-            </div>    
         </div>
-
         </AppContextProvider>
     </div>
 )};

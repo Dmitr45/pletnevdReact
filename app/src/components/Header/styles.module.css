@@ -100,22 +100,28 @@
     background: #ffffff;
   }
 }
-@media (min-width: 1200px) {
-  .header .header__menu {
-    width: 100%;
-    margin-right: 20px;
-  }
-}
 
-@media (max-width: 5000px) {
+@media (min-width: 5000px) {
   .header {
     left: 300px;
     width: calc(100% - 300px);
   }
 }
-@media (max-width: 1500px) {
+@media (min-width: 1500px) {
   .header {
     left: 0px;
-    width: 100%;
+    width: 100vw;
+  }
+}
+@media (min-width: 680px) {
+  .header {
+    left: 0px;
+    width: 100vw;
+  }
+}
+@media (min-width: 250px) {
+  .header {
+    left: 0px;
+    width: 375px;
   }
 }
