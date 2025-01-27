@@ -12,7 +12,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 50px;
-  border-radius: 15px;
 }
 .form_wrap {
   flex: 1 1 400px;
@@ -135,20 +134,15 @@
   transform: scale(-1, 1);
 }
 
-@media (min-width: 300px) {
-  .form {
-    width: calc(100% - 50px);
-  }
-}
-
-
 @media (min-width: 1200px) {
   .form {
-
+    left: 270px;
+    width: calc(100% - 270px);
   }
 }
 @media (min-width: 1920px) {
   .form {
-
+    left: 270px;
+    width: calc(100% - 270px);
   }
 }

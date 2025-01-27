@@ -58,6 +58,13 @@
     margin-right: 30px;
   }
 }
+@media (min-width: 300px) {
+  .pageContainer .pageContainer {
+    padding-left: 30px;
+    margin-right: none;
+    width: none;
+  }
+}
 .pageContainer .flexRow {
   display: flex;
   flex-direction: row;
