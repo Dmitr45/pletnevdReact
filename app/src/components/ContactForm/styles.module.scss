@@ -149,10 +149,9 @@
 
   @media (min-width: 250px) {
     .form {
-    border-radius: 15px;
     left: 0px;
-    width: 100vw;
-    width: calc(100% - 60px);
+    height: 100vh;
+    width: calc(100% - 30px);
     &_img{
         display: none;
     }

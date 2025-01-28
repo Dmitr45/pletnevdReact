@@ -17,8 +17,9 @@ export default function Func(){ //Main
 let [mobile,setMobaile ] = useState(false);
 
 useEffect(()=>{
+    setInterval(()=>{
     document.documentElement.scrollWidth < 1200 ? setMobaile(true) : setMobaile(false);
-
+    }, 1000)
 } ,[]);
 
 
