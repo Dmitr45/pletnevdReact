@@ -5,7 +5,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 30px;
 }
 .pageContainer .flexLeft {
   flex: 1 1 700px;
@@ -39,30 +38,32 @@
     line-height: 30px;
   }
 }
-@media (min-width: 1400px) {
+@media (max-width: 5000px) {
   .pageContainer .pageContainer {
     max-width: 1220px;
     padding-left: 49px;
-    margin-right: 44px;
+    padding-right: 30px;
   }
 }
-@media (min-width: 1200px) {
+@media (max-width: 1500px) {
   .pageContainer .pageContainer {
-    padding-left: 44px;
-    margin-right: 40px;
-  }
-}
-@media (min-width: 650px) {
-  .pageContainer .pageContainer {
+    width: calc(100% - 60px);
     padding-left: 30px;
-    margin-right: 30px;
+    padding-right: 30px;
   }
 }
-@media (min-width: 250px) {
+@media (max-width: 700px) {
   .pageContainer .pageContainer {
-    padding-left: 30px;
-    margin-right: none;
-    width: none;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .pageContainer .pageContainer {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 .pageContainer .flexRow {
@@ -73,8 +74,13 @@
 }
 .pageContainer .flexRowItems {
   flex: 1 1 30%;
+  min-width: 300px;
 }
 
+.requisites {
+  width: calc(100% - 60px);
+  padding-left: 30px;
+}
 .requisites span {
   font-size: 16px;
 }
@@ -128,24 +134,15 @@
 }
 
 .ProjectsPage_list {
-  width: calc(100% - 30px);
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 20px;
 }
 .ProjectsPage_list_item {
-  flex: 0 0 300px;
   border: 1px solid #888;
   border-radius: 15px;
   padding: 15px;
-}
-.ProjectsPage_title {
-  margin-top: 10px;
-}
-.ProjectsPage_title a {
-  font-size: 32px;
-  font-size: 600;
 }
 .ProjectsPage_flex {
   margin-top: 10px;
@@ -153,14 +150,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
-}
-.ProjectsPage_promo {
-  flex: 0 0 400px;
-}
-.ProjectsPage_text {
-  flex: 1 0 400px;
-  padding: 30px;
-  text-align: justify;
 }
 .ProjectsPage_gitFigma {
   flex: 0 0 50px;
@@ -174,8 +163,106 @@
 .ProjectsPage_gitFigma img {
   height: 100px;
 }
-.ProjectsPage_img {
-  height: 300px;
-  width: 400px;
-  background-size: cover;
+
+@media (max-width: 5000px) {
+  .ProjectsPage_list {
+    width: calc(100% - 30px);
+  }
+  .ProjectsPage_list_item {
+    flex: 0 0 300px;
+  }
+  .ProjectsPage_title {
+    margin-top: 10px;
+  }
+  .ProjectsPage_title a {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .ProjectsPage_img {
+    height: 300px;
+    width: 400px;
+    background-size: cover;
+  }
+}
+@media (min-width: 700px) {
+  .ProjectsPage_list {
+    padding-left: 30px;
+    width: calc(100% - 60px);
+  }
+  .ProjectsPage_list_item {
+    flex: 0 0 300px;
+  }
+  .ProjectsPage_title {
+    margin-top: 10px;
+  }
+  .ProjectsPage_title a {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .ProjectsPage_promo {
+    flex: 0 0 400px;
+    margin: 0 auto;
+  }
+  .ProjectsPage_text {
+    flex: 1 0 400px;
+    padding: 30px;
+    text-align: justify;
+  }
+}
+@media (max-width: 700px) {
+  .ProjectsPage_list {
+    width: calc(100% - 30px);
+  }
+  .ProjectsPage_list_item {
+    flex: 0 0 300px;
+  }
+  .ProjectsPage_title {
+    margin-top: 10px;
+  }
+  .ProjectsPage_title a {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .ProjectsPage_promo {
+    flex: 0 0 400px;
+    margin: 0 auto;
+  }
+  .ProjectsPage_gitFigma img {
+    height: 30px;
+    margin: 0 20px;
+  }
+}
+@media (max-width: 500px) {
+  .ProjectsPage_list {
+    padding-left: 7px;
+    width: calc(100% - 15px);
+  }
+  .ProjectsPage_list_item {
+    flex: 0 0 250px;
+  }
+  .ProjectsPage_title {
+    margin-top: 10px;
+  }
+  .ProjectsPage_title a {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .ProjectsPage_promo {
+    flex: 0 0 250px;
+    margin: 0 auto;
+  }
+  .ProjectsPage_img {
+    height: 150px;
+    width: 200px;
+    background-size: cover;
+  }
+  .ProjectsPage_text {
+    flex: 1 0 200px;
+    padding: 30px;
+    text-align: justify;
+    font-size: 15px;
+  }
+  .ProjectsPage_text div {
+    font-size: 15px;
+  }
 }

@@ -1,8 +1,6 @@
 .sidebar {
   height: 100vh;
-  flex: 0 0 300px;
-  max-width: 300px;
-  min-width: 300px;
+  flex: 0 0 310px;
   position: fixed;
 }
 .sidebar__inner {
@@ -32,6 +30,7 @@
 .sidebar__photo {
   margin-bottom: 87px;
   flex: 0 0 250px;
+  padding-right: 20px;
 }
 .sidebar__photo .photo {
   width: 230px;

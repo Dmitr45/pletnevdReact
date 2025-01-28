@@ -12,6 +12,9 @@ export default function Func(){ //Header
 let logo = `./${process.env.PUBLIC_URL}/img/logo.jpg`;
 
 let [mobile,setMobaile ] = useState(false);
+let [menuOpen, setMenuOpen] = useState(false);
+
+
 const  {menuArr, // Массив элементов меню
         cFormActive, toggleCFormActive // Активация контактной формы
         } =  useAppContext(); 
@@ -51,10 +54,13 @@ return(
         </div>
 
         
-        <div className={styles.header__btn + " " + "btn"} onClick={()=>{  toggleCFormActive(!cFormActive)  }}>
+        <div className={styles.header__btn + " " + "btn"} style={ !mobile ? {"display": "flex"} : {"display": "none"}} onClick={()=>{  toggleCFormActive(!cFormActive)  }}>
             <span>Оставить заявку</span>
         </div>
-
+        
+        <div className={styles.header__burger} style={ mobile ? {"display": "flex"} : {"display": "none"}}>
+            <div className={styles.burger} onClick={()=>{setMenuOpen(!menuOpen)}}  style={ menuOpen ? {"backgroundImage": `url(${process.env.PUBLIC_URL}/img/close2.png)`} : {"backgroundImage": `url(${process.env.PUBLIC_URL}/img/menu.png)`}}></div>
+        </div>
 
     </div>
     { cFormActive ? <ContactForm/> : "" }

@@ -1,12 +1,10 @@
 .Comics{
 height: 100%;
-width: 1000px;
     .Dmitrii{
         margin-right: 10px;
         blockquote {
             position: relative;
             text-align: center;
-            width: 450px;
             margin: 16px 16px 34px 16px;
             border: 2px solid #fa2424;
             border-radius: 20px;
@@ -42,9 +40,7 @@ width: 1000px;
         }
     }
     .Guest{
-        margin-left: calc(100% - 460px);
         blockquote {
-            width: 80%;
             position: relative;
             text-align: center;
             margin: 16px 16px 34px 16px;
@@ -86,4 +82,74 @@ width: 1000px;
         border-bottom: 1px solid #337AB7;
     }
 }
+
+
+@media (max-width: 5000px) {
+    .Comics{
+        width: 1000px;
+  }
+  .Dmitrii{
+    margin-right: 10px;
+    blockquote {
+        width: 450px;
+    }
+    }
+    .Guest{
+        margin-left: calc(100% - 460px);
+        blockquote {
+            width: 450;
+        }
+    }
+  }
+  @media (max-width: 1500px) {
+    .Comics{
+        width: 100%;
+        }
+        .Dmitrii{
+            margin-right: 10px;
+            blockquote {
+                width: 450px;
+            }
+        }
+        .Guest{
+            margin-left: calc(100% - 600px);
+            blockquote {
+                width: 450px;
+            }
+        }
+}
+  @media (max-width: 700px) {
+    .Comics{
+        width: 100%;
+        }
+        .Dmitrii{
+            margin-right: 10px;
+            blockquote {
+                width: 300px;
+            }
+        }
+        .Guest{
+            margin-left: calc(100% - 500px);
+            blockquote {
+                width: 300px;
+            }
+        }
+  }
+  @media (max-width: 500px) {
+    .Comics{
+        width: 100%;
+        }
+        .Dmitrii{
+            margin-right: 10px;
+            blockquote {
+                width: 250px;
+            }
+        }
+        .Guest{
+            margin-left: 30px;
+            blockquote {
+                width: 250px;
+            }
+        }
+  }
 

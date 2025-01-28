@@ -1,6 +1,5 @@
 .Comics {
   height: 100%;
-  width: 1000px;
 }
 .Comics .Dmitrii {
   margin-right: 10px;
@@ -8,7 +7,6 @@
 .Comics .Dmitrii blockquote {
   position: relative;
   text-align: center;
-  width: 450px;
   margin: 16px 16px 34px 16px;
   border: 2px solid #fa2424;
   border-radius: 20px;
@@ -42,11 +40,7 @@
   font-weight: bold;
   color: #fa2424;
 }
-.Comics .Guest {
-  margin-left: calc(100% - 460px);
-}
 .Comics .Guest blockquote {
-  width: 80%;
   position: relative;
   text-align: center;
   margin: 16px 16px 34px 16px;
@@ -85,4 +79,73 @@
 .Comics input {
   all: unset;
   border-bottom: 1px solid #337AB7;
+}
+
+@media (max-width: 5000px) {
+  .Comics {
+    width: 1000px;
+  }
+  .Dmitrii {
+    margin-right: 10px;
+  }
+  .Dmitrii blockquote {
+    width: 450px;
+  }
+  .Guest {
+    margin-left: calc(100% - 460px);
+  }
+  .Guest blockquote {
+    width: 450;
+  }
+}
+@media (max-width: 1500px) {
+  .Comics {
+    width: 100%;
+  }
+  .Dmitrii {
+    margin-right: 10px;
+  }
+  .Dmitrii blockquote {
+    width: 450px;
+  }
+  .Guest {
+    margin-left: calc(100% - 600px);
+  }
+  .Guest blockquote {
+    width: 450px;
+  }
+}
+@media (max-width: 700px) {
+  .Comics {
+    width: 100%;
+  }
+  .Dmitrii {
+    margin-right: 10px;
+  }
+  .Dmitrii blockquote {
+    width: 300px;
+  }
+  .Guest {
+    margin-left: calc(100% - 500px);
+  }
+  .Guest blockquote {
+    width: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .Comics {
+    width: 100%;
+  }
+  .Dmitrii {
+    margin-right: 10px;
+  }
+  .Dmitrii blockquote {
+    width: 250px;
+  }
+  .Guest {
+    margin-left: 30px;
+  }
+  .Guest blockquote {
+    width: 250px;
+  }
 }
