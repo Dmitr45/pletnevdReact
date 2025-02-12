@@ -61,7 +61,7 @@
 }
 .header__menu__item {
   height: 100%;
-  flex: 1 1 150px;
+  max-width: 150px;
   line-height: 30px;
   text-align: left;
   cursor: pointer;
