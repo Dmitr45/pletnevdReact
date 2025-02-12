@@ -63,12 +63,49 @@
   height: 100%;
   flex: 1 1 150px;
   line-height: 30px;
-  text-align: center;
+  text-align: left;
   cursor: pointer;
 }
 .header__menu__item a {
+  display: block;
+  width: 100%;
+  padding-left: 10px;
   font-size: 24px;
   font-weight: 600;
+  line-height: 22px;
+}
+.header__menu__item a::before {
+  content: "";
+  padding-right: 5px;
+  width: 5px;
+  border-left: 3px solid #fff;
+  border-image: linear-gradient(to top, #fff, #fff) 1;
+  height: 0%;
+  transition: all 0.5s;
+}
+.header__menu__item a:hover::before {
+  content: "";
+  border-left: 3px solid #fa2424;
+  border-image: linear-gradient(to top, #fa2424, #333333) 1;
+}
+.header__menu__item a:hover {
+  height: 50%;
+}
+.header__menu__item a:hover > span {
+  width: 100%;
+  height: 3px;
+  border-bottom: 3px solid #333333;
+  border-image: linear-gradient(to left, #333333, #fa2424) 1;
+}
+.header__menu__itemUnderline {
+  display: block;
+  width: 0;
+  height: 3px;
+  border-bottom: 3px solid #fff;
+  border-bottom-left-radius: 20px 20px;
+  height: 5px;
+  color: #fa2424;
+  transition: width 0.5s;
 }
 .header__menuMobile {
   position: absolute;
@@ -116,11 +153,26 @@
   color: inherit;
 }
 .header__btn {
-  border: 3px solid #fa2424;
+  border: 3px solid transparent;
   border-radius: 15px;
-  color: #fa2424;
+  color: #333333;
   padding: 0;
   background: #ffffff;
+  animation-duration: 3s;
+  animation-name: changeColor;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes changeColor {
+  from {
+    border-image: linear-gradient(to top, #fa2424, #333333) 0.1;
+  }
+  50% {
+    border-image: linear-gradient(to top, #fa2424, #fa2424) 0.1;
+  }
+  to {
+    border-image: linear-gradient(to top, #333333, #fa2424) 0.1;
+  }
 }
 .header__btn span {
   font-size: 24px;

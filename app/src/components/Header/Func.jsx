@@ -26,7 +26,7 @@ useEffect(()=>{
 } ,[]);
 
         
-let menuItems = menuArr.map((Obj)=> {return( <div key={Obj.id} className={styles.header__menu__item}><Link to={Obj.link} target={ Obj.link.slice(0,4) === 'http' ? '_blank' : '_self'} >{Obj.name}</Link></div>)});
+let menuItems = menuArr.map((Obj)=> {return( <div key={Obj.id} className={styles.header__menu__item}><Link to={Obj.link} target={ Obj.link.slice(0,4) === 'http' ? '_blank' : '_self'} >{Obj.name}<span className={styles.header__menu__itemUnderline}></span></Link></div>)});
 let menuMobItems = menuArr.map((Obj)=> {return( <div onClick={()=>{setMenuOpen(false)}} key={Obj.id} className={styles.header__menuMobile__item}><Link to={Obj.link} target={ Obj.link.slice(0,4) === 'http' ? '_blank' : '_self'} >{Obj.name}</Link></div>)});
 
 return(
