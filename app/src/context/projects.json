@@ -1,15 +1,6 @@
 {
   "projects": [
     {
-      "name": "Посмотри в окно",
-      "url": "https://pletnevd.com/project/CameraCity/app/",
-      "github": "https://github.com/Dmitr45/Camera_city_js_scss.git",
-      "img": "https://pletnevd.com/project/CameraCity/Promo.JPG",
-      "text": "Проектная работа студенту на заказ - верстка по шаблону Figma из Яндекс.Практикума. Небольшая работа с JavaScript DOM.",
-      "figma": "https://www.figma.com/design/ajYUWLsbpI49tGn91M8uIt/2-%D1%81%D0%BF%D1%80%D0%B8%D0%BD%D1%82.-%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0?node-id=1-214&t=gWtGGmH6uhaj7ZwZ-0",
-      "stack": "HTML, CSS, JS, Figma"
-    },
-    {
       "name": "HexaCore",
       "url": "https://pletnevd.com/project/HexaCore_HTML_SCSS",
       "github": "https://github.com/Dmitr45/HexaCore_HTML_SCSS",
