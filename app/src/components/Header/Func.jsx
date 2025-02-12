@@ -38,7 +38,7 @@ return(
                 <a href="tel:+79529025968">+7 (952)-902-5968</a>
             </div>
             <div  className={styles.header__btn + " " + "btn"} style={ mobile ? {"display": "flex"} : {"display": "none"}} onClick={()=>{  toggleCFormActive(!cFormActive)  }}>
-                <span onClick={()=>{setMenuOpen(false)}}>Оставить заявку</span>
+                <span onClick={()=>{setMenuOpen(false)}}>Сообщение</span>
             </div>            
             </div> : null }
     <div className={styles.header__inner+" "+  "container"}>
@@ -66,7 +66,7 @@ return(
 
         
         <div className={styles.header__btn + " " + "btn"} style={ !mobile ? {"display": "flex"} : {"display": "none"}} onClick={()=>{  toggleCFormActive(!cFormActive)  }}>
-            <span>Оставить заявку</span>
+            <span>Сообщение</span>
         </div>
         
         <div className={styles.header__burger} style={ mobile ? {"display": "flex"} : {"display": "none"}}>

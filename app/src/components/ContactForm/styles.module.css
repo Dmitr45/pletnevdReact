@@ -8,23 +8,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 50px;
 }
 .form_wrap {
   flex: 1 1 400px;
   max-width: 90%;
   position: relative;
-}
-.form_wrap .title {
-  margin: 0 auto;
-  color: #fff;
-  font-size: 37px;
-  font-weight: 700;
-  line-height: 38px;
-  max-width: 592px;
-  margin-bottom: 52px;
 }
 .form_wrap .postTitle {
   color: #fff;
@@ -135,43 +123,87 @@
   transform: scale(-1, 1);
 }
 
-@media (min-width: 250px) {
-  .form {
-    left: 0px;
-    height: 100vh;
-    width: calc(100% - 30px);
-  }
-  .form_img {
-    display: none;
-  }
-}
-@media (min-width: 950px) {
-  .form {
-    border-radius: 15px;
-    left: 0px;
-    width: calc(100% - 60px);
-  }
-  .form_img {
-    display: block;
-  }
-}
 @media (min-width: 1920px) {
   .form {
     border-radius: 15px;
     left: 300px;
-    width: calc(100% - 270px);
+    height: 500px;
+    padding: 60px;
   }
   .form_img {
     display: block;
   }
+  .title {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 38px;
+    max-width: 592px;
+    margin-bottom: 52px;
+  }
 }
-@media (min-width: 1500px) {
+@media (max-width: 1920px) {
   .form {
     border-radius: 15px;
     left: 300px;
-    width: 100vw;
+    width: calc(100% - 50px);
+    max-width: 1200px;
+    height: 500px;
+    padding: 60px;
   }
   .form_img {
     display: block;
+  }
+  .title {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 38px;
+    max-width: 592px;
+    margin-bottom: 52px;
+  }
+}
+@media (max-width: 1500px) {
+  .form {
+    border-radius: 15px;
+    left: 0px;
+    width: calc(100% - 120px);
+    height: 500px;
+    padding: 60px;
+  }
+  .form_img {
+    display: block;
+  }
+  .title {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 38px;
+    max-width: 592px;
+    margin-bottom: 52px;
+  }
+}
+@media (max-width: 950px) {
+  .form {
+    left: 0px;
+    height: calc(100% - 110px);
+    width: calc(100% - 40px);
+    min-width: 250px;
+    padding: 20px;
+  }
+  .form_img {
+    display: none;
+  }
+  .title {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 38px;
+    max-width: 592px;
+    margin-bottom: 25px;
   }
 }

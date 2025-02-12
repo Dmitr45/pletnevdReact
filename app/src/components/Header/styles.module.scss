@@ -114,18 +114,19 @@
     line-height: 26px;
     color: #333333;
     a{
-      font-size: 20px;
+      font-size: 24px;
       font-weight: 600;
       text-decoration: none; 
       color:inherit; }
   }
   &__btn{
     border: 3px solid #fa2424;
+    border-radius: 15px;
     color: #fa2424;
     padding: 0;
     background: #ffffff;
     span{
-      font-size: 18px;
+      font-size: 24px;
       font-weight: 600;
     }
   }
@@ -153,7 +154,7 @@
 
 @media (max-width: 5000px) {
   .header {
-    left: 300px;
+    left: 290px;
     width: calc(100% - 300px);
   }
 
@@ -167,7 +168,7 @@
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 721px) {
   .header {
     left: 0px;
     width: 100%;
