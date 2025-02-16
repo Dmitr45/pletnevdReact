@@ -120,7 +120,7 @@
   flex-direction: column;
   align-items: center;
   transition: top 1s ease-out 0.5s;
-  z-index: 1001;
+  z-index: 900;
 }
 .header__menuMobile__item {
   text-align: center;

@@ -1,6 +1,15 @@
 {
   "projects": [
     {
+      "name": "ElisaLab",
+      "url": "https://elisalab.ru",
+      "github": "https://github.com/Dmitr45/ElisaLab_ViteReactTS.git",
+      "img": "https://elisalab.ru/Promo.JPG",
+      "text": "WEB и Mobile приложение для лаборантов  поликлиник/диагностических центров, таких как ИНВИТРО, занятых в диагностике вирусных/бактериальных инфекций методами Иммуноферментного (ИФА) анализа.",
+      "figma": "",
+      "stack": "React.js, TypeScript, Vite, SCSS"
+    },
+    {
       "name": "HexaCore",
       "url": "https://pletnevd.com/project/HexaCore_HTML_SCSS",
       "github": "https://github.com/Dmitr45/HexaCore_HTML_SCSS",

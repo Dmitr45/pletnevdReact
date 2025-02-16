@@ -130,7 +130,7 @@
     flex-direction: column;
     align-items: center;
     transition: top 1s ease-out .5s;
-    z-index: 1001;
+    z-index: 900;
     &__item {
       text-align: center;
       flex: 0 0 20px;
