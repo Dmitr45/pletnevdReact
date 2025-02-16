@@ -11,9 +11,8 @@ import {useAppContext} from  "../../context/ContextProvider";
 
 export default function Home(){ //Content
 
-let {UserName, toggleUserName} = useAppContext();
+let {UserName, toggleUserName, toggleCFormActive} = useAppContext();
 const methods = useForm();
-const { register, handleSubmit } = methods;
 const InputNameRef = useRef(null);
 
 
@@ -67,7 +66,7 @@ function onSubmitName(dataForm) {
 
 const BlockArr2 =  [
     <BlockD div= {<div><p>Добрый день, {UserName}! Приветствую тебя на своем сайте.</p></div>} />,
-    <BlockD div= {<div><p>Если у тебя есть ко мне предложение или задача, то смелее жми "Оставить заявку" и погнали! Если ты хочешь перейти на страницу со своим поектом, то напомни свой @telegram</p></div>} />,
+    <BlockD div= {<div><p>Если у тебя есть ко мне предложение или задача, то смелее жми <span onClick={()=>{  toggleCFormActive(true);  }} style={{textDecoration: 'underline', cursor:'pointer', fontSize: 'inherit'}} >"Оставить заявку"</span> и погнали! Если ты хочешь перейти на страницу со своим поектом, то напомни свой @telegram</p></div>} />,
     <BlockG div={<div><p>Мой телеграмм: <FormProvider {...methods}>
                                     <form   onSubmit={methods.handleSubmit(onSubmitTelegram)}>
                                         <InputTelegram/>

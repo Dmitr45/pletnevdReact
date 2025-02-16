@@ -3,7 +3,7 @@ import styles from './styles.module.css';
 import "../../styles.css";
 import {useAppContext} from  "../../context/ContextProvider";
 import ContactForm from "../ContactForm/Func";
-import {Routes, Route, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
 
@@ -44,7 +44,7 @@ return(
     <div className={styles.header__inner+" "+  "container"}>
         <div className={styles.header__logo} style={ mobile ? {"display": "flex"} : {"display": "none"}}>
             <div className={styles.logo}>
-                <img className={styles.img}   src={logo}/>
+            <Link to="/" target='_self' ><img className={styles.img} src={logo}/></Link>
             </div>
             <div>
                 <div className={styles.Pletnev}>
