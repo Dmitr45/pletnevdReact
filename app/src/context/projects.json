@@ -10,6 +10,15 @@
       "stack": "React.js, TypeScript, Vite, SCSS"
     },
     {
+      "name": "RoboBaker",
+      "url": "http://RoboBaker.pletnevd.com",
+      "github": "https://github.com/Dmitr45/RoboBaker_Vite_ReactTS.git",
+      "img": "http://RoboBaker.pletnevd.com/Promo.JPG",
+      "text": "Клиентское приложение в автомат для выпекания хлеба",
+      "figma": "",
+      "stack": "React.js, TypeScript, Vite, SCSS"
+    },
+    {
       "name": "HexaCore",
       "url": "https://pletnevd.com/project/HexaCore_HTML_SCSS",
       "github": "https://github.com/Dmitr45/HexaCore_HTML_SCSS",
