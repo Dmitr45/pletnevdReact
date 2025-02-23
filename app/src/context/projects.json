@@ -13,7 +13,7 @@
       "name": "RoboBaker",
       "url": "http://RoboBaker.pletnevd.com",
       "github": "https://github.com/Dmitr45/RoboBaker_Vite_ReactTS.git",
-      "img": "http://RoboBaker.pletnevd.com/Promo.JPG",
+      "img": "https://pletnevd.com/project/RoboBaker/Client/dist/Promo.JPG",
       "text": "Клиентское приложение в автомат для выпекания хлеба",
       "figma": "",
       "stack": "React.js, TypeScript, Vite, SCSS"
