@@ -17,10 +17,6 @@
   color: inherit;
 }
 
-html {
-  width: 100vw;
-}
-
 .btn {
   cursor: pointer;
   display: -webkit-inline-box;
