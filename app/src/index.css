@@ -1,5 +1,7 @@
 html{
   width: calc (100% - 5px);
+  overflow: scroll;
+  scrollbar-gutter: stable;
 }
 
 body {
