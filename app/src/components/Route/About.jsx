@@ -7,7 +7,7 @@ import {useAppContext} from  "../../context/ContextProvider";
 
 export default function Abaut(){ //Content
 
-let BackgroundImage = { "background-image" : `url(./${process.env.PUBLIC_URL}/img/Abaut.png)`};
+let BackgroundImage = { "background-image" : `url(${process.env.PUBLIC_URL}/img/Abaut.png)`};
 
 return(
 <div className={styles.Abaut}>
