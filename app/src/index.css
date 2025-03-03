@@ -1,7 +1,9 @@
 html{
   width: calc (100% - 5px);
   overflow: scroll;
+  overflow-x:hidden;  /*для горизонтального*/
   scrollbar-gutter: stable;
+  scrollbar-width: thin;
 }
 
 body {
