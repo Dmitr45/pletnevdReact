@@ -1,19 +1,15 @@
-import {useState} from 'react';
 import styles from './styles.module.css';
 import "../../styles.css";
-import {useAppContext} from  "../../context/ContextProvider";
+
 
 
 
 export default function Abaut(){ //Content
-
-let BackgroundImage = { "background-image" : `url(${process.env.PUBLIC_URL}/img/Abaut.png)`};
-
 return(
-<div className={styles.Abaut}>
+<div className={styles.Abaut} id="p0">
     <div className={styles.pageContainer}>
-    <div className={styles.flexLeft} id="p0">
-    <div className={styles.AbautImg} style={BackgroundImage}></div>         
+    <div className={styles.flexLeft} >
+    <div className={styles.AbautImg}></div>         
     <div className={styles.headTitle} >Чем я могу вам помочь</div>
     <div className={styles.titleH2} >Верстка HTML/SCSS</div>
     <p>Выполню качественную HTML/CSS/SСSS верстку всех страниц сайта по уже готовому, Вашему дизайну сайта, если он уже есть.</p>
