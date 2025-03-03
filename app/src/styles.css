@@ -52,10 +52,6 @@
   margin-right: 30px;
 }
 
-.wrapper {
-  max-width: 2000px;
-}
-
 .flex_row {
   display: flex;
   flex-direction: row;
